@@ -18,27 +18,49 @@ The presentation was made in BTM Istanbul to find investors but did not succeed.
 
 Specifications
 
-- Info: Aug 1, 2018 - Freelance
+- Info: Aug 1, 2018 / Freelance
 - Language: C
 - Hardware: STM32F1 Devices, DC Motors
 
 ## Lighting Circuit
 
-You can find here the Schematic, PCB, and resource files of the lighting circuit to be used in Car Trunks.
+You can find here the Schematic, PCB designs, and resource files of the lighting circuit to be used in Car Trunks.
 
 Specifications
 
-- Info: Nov. 2017 - Freelance
+- Info: Nov. 2017 / Freelance
 - Software Used: DipTrace
 
-Components
+Main Components
 
-- 560 or 1000 OHM Resistance
+- 560 and 1000 OHM Resistance
 - Nationstar 2835 SMD LED
 
-Dimensions
+PCB Dimensions
 
-- PCB: 1900-1997 cm
+- PCB: 1900 - 1997 cm
 - Resistance: 1206 SMD
 - Cable Dia: 1.5 mm
 - Hole Dia: 2 mm
+
+## Stop Button
+
+You can find here the Schematic, PCB designs, and resource files of the Stop Button.
+This project is implemented for people who use wheelchairs in public buses.
+This is done by assembling Stop Button to the level that can person access and flushing green and red LED by making it recognizable.
+
+Specifications
+
+- Info: Sep. 2017 / Freelance
+- Software Used: DipTrace
+
+Main Components
+
+- Tach Button
+- Resistance
+
+PCB Dimensions
+
+- 1900 - 1997 cm
+- Hole DIA: 2 mm
+- Cable DIA: 1.5 mm
