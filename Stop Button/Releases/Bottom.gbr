@@ -1,0 +1,24 @@
+G04 DipTrace 3.3.0.1*
+G04 Bottom.gbr*
+%MOMM*%
+G04 #@! TF.FileFunction,Copper,L2,Bot*
+G04 #@! TF.Part,Single*
+G04 #@! TA.AperFunction,ComponentPad*
+%ADD20C,1.5*%
+G04 #@! TA.AperFunction,ViaPad*
+%ADD25C,2.4*%
+%FSLAX35Y35*%
+G04*
+G71*
+G90*
+G75*
+G01*
+G04 Bottom*
+%LPD*%
+D25*
+X539693Y-1650827D3*
+X-349213D3*
+X158733D3*
+D20*
+X0Y0D3*
+M02*
