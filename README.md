@@ -22,6 +22,16 @@ Specifications
 - Language: C
 - Hardware: STM32F1 Devices, DC Motors
 
+## Coin Slot Machine
+
+You can find here initial tests of coin slot-based vending machine controller.
+
+Specifications
+
+- Info: 2018 / Freelance
+- Language: C Wiring
+- Hardware: Arduino, IO, Relay, Keypad
+
 ## Lighting Circuit
 
 You can find here the Schematic, PCB designs, and resource files of the lighting circuit to be used in Car Trunks.
@@ -62,5 +72,6 @@ Main Components
 PCB Dimensions
 
 - 1900 - 1997 cm
+- SMD 1206s
 - Hole DIA: 2 mm
 - Cable DIA: 1.5 mm
