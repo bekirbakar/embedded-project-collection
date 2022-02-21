@@ -1,0 +1,6 @@
+RefDes;Name;Pattern;X (mm);Y (mm);Side;Rotate;Value
+led4;2835_LED;2835_LED;10.089;2.47;Top;0;
+led1;2835_LED;2835_LED;2.219;11.111;Top;0;
+led2;2835_LED;2835_LED;10.089;11.111;Top;0;
+led3;2835_LED;2835_LED;2.219;2.47;Top;0;
+r;RES_1206;RES_1206;6.789;6.711;Top;0;
