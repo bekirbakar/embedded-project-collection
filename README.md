@@ -22,6 +22,10 @@ Specifications
 - Language: C
 - Hardware: STM32F1 Devices, DC Motors
 
+## Charger Unit
+
+- Info: 2018 / Schematic Design / Freelance
+
 ## Coin Slot Machine
 
 You can find here initial tests of coin slot-based vending machine controller.
