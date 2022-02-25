@@ -22,6 +22,8 @@ Specifications
 - Language: C
 - Hardware: STM32F1 Devices, DC Motors
 
+Note that STM libraries were not uploaded. See the `.gitignore` file for details.
+
 ## Charger Unit
 
 - Info: 2018 / Schematic Design / Freelance
