@@ -3,9 +3,7 @@
 **/.vscode
 
 # Algorithmic Game Machine
-
 ## Ignore STM Core Library Files
-
 Algorithmic Game Machine/include/stm32f1xx_hal_conf.h
 Algorithmic Game Machine/include/stm32f1xx_it.h
 Algorithmic Game Machine/source/stm32f1xx_hal_msp.c
@@ -13,13 +11,10 @@ Algorithmic Game Machine/source/stm32f1xx_it.c
 Algorithmic Game Machine/source/system_stm32f1xx.c
 
 # Coin Slot Machine
-
 ## Ignore Generic Libraries
-
 Coin Slot Machine/libraries/Keypad
 
 # Charger Unit
-
 Charger Unit/Documents/**
 Charger Unit/Notes.txt
 Charger Unit/Voltage Sensor.pdf
