@@ -1,0 +1,21 @@
+{
+    "C_Cpp.errorSquiggles": "Disabled",
+    "cSpell.words": [
+        "AHBCLK",
+        "EXTI",
+        "GPIO",
+        "GPIOA",
+        "GPIOB",
+        "GPIOC",
+        "HCLK",
+        "hexa",
+        "htim",
+        "Nationstar",
+        "NVIC",
+        "OCFAST",
+        "OCMODE",
+        "OCPOLARITY",
+        "PCLK",
+        "TRGO"
+    ]
+}
