@@ -1,12 +1,12 @@
 # Electronics
 
-This repository contains electronics-related freelance, hobby etc. projects of mine.
-I decided to publish from my archive or migrate them from another Github repository to here.
-All of the projects published here will be very old as I am not currently working on Embedded Systems.
-But I am reviewing and trying to reproduce outputs (not always possible since I don't have the setup) before publishing
-them.
+This repository contains electronics-related projects (freelance, hobby ...).
 
-You can find here Schematic, PCB design, firmware mostly targeted for STM devices.
+I publish them from my archive or move them from another repository to here.
+All of the projects published here will be very old, simple, and not full implementations.
+I review and try to reproduce outputs (not always possible due to setup requirements) before publishing them.
+
+You can find here the Schematic, PCB design, and firmware mostly targeted for STM devices.
 Consider every root folder as a project and the below sub-title as its description.
 If you find anything useful, do not hesitate to get more information.
 
@@ -63,7 +63,8 @@ PCB Dimensions
 
 You can find here the Schematic, PCB designs, and resource files of the Stop Button.
 This project is implemented for people who use wheelchairs in public buses.
-This is done by assembling Stop Button to the level that can person access and flushing green and red LED by making it recognizable.
+This is done by assembling Stop Button to the level that can person access and flushing green and red LED by making it
+recognizable.
 
 Specifications
 
