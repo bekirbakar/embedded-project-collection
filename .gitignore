@@ -1,5 +1,7 @@
 **/.DS_Store
 
+.vscode/**
+
 # Algorithmic Game Machine
 ## Ignore STM Core Library Files
 Algorithmic Game Machine/include/stm32f1xx_hal_conf.h
