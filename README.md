@@ -1,10 +1,9 @@
 # Electronics
 
-This repository contains electronics-related projects (freelance, hobby ...).
+This repository contains electronics-related projects (freelance, hobby ...) from my archive.
 
-I publish them from my archive or move them from another repository to here.
-All of the projects published here will be very old, simple, and not full implementations.
-I review and try to reproduce outputs (not always possible due to setup requirements) before publishing them.
+All of the projects are very old, simple, and not full implementations.
+I reviewed them and tried to reproduce outputs (not always possible due to setup requirements) before publishing them.
 
 You can find here the Schematic, PCB design, and firmware mostly targeted for STM devices.
 Consider every root folder as a project and the below sub-title as its description.
@@ -12,7 +11,7 @@ If you find anything useful, do not hesitate to get more information.
 
 ## Algorithmic Game Machine
 
-This repository contains the first implementations I made to get the job of the Algorithmic Game Machine project.
+This one contains the first implementations that I developed to get the job of the Algorithmic Game Machine project.
 This project was supposed to be a game machine helping children in learning algorithms.
 The presentation was made in BTM Istanbul to find investors but did not succeed.
 
@@ -61,9 +60,10 @@ PCB Dimensions
 
 ## Stop Button
 
-You can find here the Schematic, PCB designs, and resource files of the Stop Button.
-This project is implemented for people who use wheelchairs in public buses.
-This is done by assembling Stop Button to the level that can person access and flushing green and red LED by making it
+The Schematic, PCB designs, and resource files of the Stop Button.
+
+This project was implemented for people who use wheelchairs in public buses.
+This was done by assembling Stop Button to the level that can person access and flushing green and red LED by making it
 recognizable.
 
 Specifications
