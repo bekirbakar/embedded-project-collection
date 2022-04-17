@@ -6,18 +6,12 @@ All of the projects are very old, simple, and not full implementations.
 I reviewed them and tried to reproduce outputs (not always possible due to setup requirements) before publishing them.
 
 You can find here the Schematic, PCB design, and firmware mostly targeted for STM devices.
-Consider every root folder as a project and the below sub-title as its description.
+Consider every top folder as a project and the below sub-title as its description.
 If you find anything useful, do not hesitate to get more information.
 
 ## Algorithmic Game Machine
 
-This one contains the first implementations that I developed to get the job of the Algorithmic Game Machine project.
-This project was supposed to be a game machine helping children in learning algorithms.
-The presentation was made in BTM Istanbul to find investors but did not succeed.
-
-Specifications
-
-- Info: Aug 1, 2018 / Freelance
+- Info: August 1, 2018 / Freelance
 - Language: C
 - Hardware: STM32F1 Devices, DC Motors
 
@@ -25,13 +19,10 @@ Note that STM libraries were not uploaded. See the `.gitignore` file for details
 
 ## Charger Unit
 
-- Info: 2018 / Schematic Design / Freelance
+- Info: 2018 / Freelance
+- Schematic Design and Reference Files
 
 ## Coin Slot Machine
-
-You can find here initial tests of coin slot-based vending machine controller.
-
-Specifications
 
 - Info: 2018 / Freelance
 - Language: C Wiring
@@ -39,11 +30,9 @@ Specifications
 
 ## Lighting Circuit
 
-You can find here the Schematic, PCB designs, and resource files of the lighting circuit to be used in Car Trunks.
-
 Specifications
 
-- Info: Nov. 2017 / Freelance
+- Info: November 2017 / Freelance
 - Software Used: DipTrace
 
 Main Components
@@ -59,12 +48,6 @@ PCB Dimensions
 - Hole Dia: 2 mm
 
 ## Stop Button
-
-The Schematic, PCB designs, and resource files of the Stop Button.
-
-This project was implemented for people who use wheelchairs in public buses.
-This was done by assembling Stop Button to the level that can person access and flushing green and red LED by making it
-recognizable.
 
 Specifications
 
