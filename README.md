@@ -2,7 +2,7 @@
 
 This repository contains electronics-related projects (freelance, hobby ...) from my archive.
 
-All of the projects are very old, simple, and not full implementations.
+All of the projects are very old, simple, and not full implementations - just initial development or a POC.
 I reviewed them and tried to reproduce outputs (not always possible due to setup requirements) before publishing them.
 
 You can find here the Schematic, PCB design, and firmware mostly targeted for STM devices.
@@ -51,7 +51,7 @@ PCB Dimensions
 
 Specifications
 
-- Info: Sep. 2017 / Freelance
+- Info: September 2017 / Freelance
 - Software Used: DipTrace
 
 Main Components
