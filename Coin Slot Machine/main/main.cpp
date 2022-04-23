@@ -44,7 +44,8 @@ unsigned int product[CELL][PRICE] = {
 void setup()
 {
     pinMode(coinInterruptPin, INPUT_PULLUP);
-    attachInterrupt(digitalPinToInterrupt(coinInterruptPin), coinInput, CHANGE);
+    attachInterrupt(digitalPinToInterrupt(coinInterruptPin), coinInput,
+                    CHANGE);
 
     // Add an event listener for this keypad.
     keypad.addEventListener(keypadEvent);
@@ -144,7 +145,8 @@ void keypadEvent(KeypadEvent key)
         {
             Serial.println(key);
             // digitalWrite(ledPin,!digitalRead(ledPin));
-            // ledPin_state = digitalRead(ledPin);  // Remember LED state, lit or unlit.
+            // ledPin_state = digitalRead(ledPin);
+            // Remember LED state, lit or unlit.
         }
         break;
 
@@ -152,7 +154,8 @@ void keypadEvent(KeypadEvent key)
         if (key == '*')
         {
             Serial.println(key);
-            // digitalWrite(ledPin,ledPin_state);   // Restore LED state from before it started blinking.
+            // digitalWrite(ledPin,ledPin_state);
+            // Restore LED state from before it started blinking.
             blink = false;
         }
         break;
@@ -161,14 +164,16 @@ void keypadEvent(KeypadEvent key)
         if (key == '*')
         {
             Serial.println("hold");
-            // blink = true;    // Blink the LED when holding the * key.
+            // blink = true;
+            // Blink the LED when holding the * key.
         }
         break;
     case IDLE:
         if (key == '*')
         {
             Serial.println("idle");
-            // blink = true;    // Blink the LED when holding the * key.
+            // blink = true;
+            // Blink the LED when holding the * key.
         }
         break;
     }
