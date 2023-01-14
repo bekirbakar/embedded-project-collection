@@ -10,11 +10,10 @@ const byte ROWS = 4;
 const byte COLS = 4;
 
 // Define the symbols on the buttons of the keypads.
-char hexaKeys[ROWS][COLS] = {
-    {'1', '2', '3', 'A'},
-    {'4', '5', '6', 'B'},
-    {'7', '8', '9', 'C'},
-    {'*', '0', '#', 'D'}};
+char hexaKeys[ROWS][COLS] = {{'1', '2', '3', 'A'},
+                             {'4', '5', '6', 'B'},
+                             {'7', '8', '9', 'C'},
+                             {'*', '0', '#', 'D'}};
 
 byte rowPins[ROWS] = {3, 4, 5, 6};
 byte colPins[COLS] = {7, 8, 9, 10};
@@ -33,13 +32,12 @@ byte eventNumber = 0;
 const byte CELL = 6;
 const byte PRICE = 2;
 
-unsigned int product[CELL][PRICE] = {
-    {1, 100},
-    {2, 200},
-    {3, 200},
-    {4, 100},
-    {5, 100},
-    {6, 100}};
+unsigned int product[CELL][PRICE] = {{1, 100},
+                                     {2, 200},
+                                     {3, 200},
+                                     {4, 100},
+                                     {5, 100},
+                                     {6, 100}};
 
 void setup()
 {
@@ -104,7 +102,7 @@ int relayOnOff(short int no)
     // Wait for a while.
     // Set output low.
 
-    Serial.println("Ürün seçildi:");
+    Serial.println("Product selected.");
     Serial.println(100);
     Serial.println("\n");
 

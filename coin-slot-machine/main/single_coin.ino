@@ -8,6 +8,7 @@
 int coinPin = 0;
 int relayPin = 12;
 int qu = 0;
+
 void setup()
 {
     pinMode(coinPin, INPUT);
@@ -26,7 +27,7 @@ void loop()
 
         if (qu == MONEY)
         {
-            Serial.println("Product released!.");
+            Serial.println("Product released!");
             digitalWrite(relayPin, LOW);
             delay(2000);
             qu = 0;
