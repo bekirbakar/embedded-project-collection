@@ -32,9 +32,8 @@ Game cargoBot;
 
 void matrixCopy(void *dest, void *src);
 
-bool compareMatrices(
-    uint8_t x[CELL_LETTER_SIZE][CELL_NUMBER_SIZE],
-    uint8_t y[CELL_LETTER_SIZE][CELL_NUMBER_SIZE]);
+bool compareMatrices(uint8_t x[CELL_LETTER_SIZE][CELL_NUMBER_SIZE],
+                     uint8_t y[CELL_LETTER_SIZE][CELL_NUMBER_SIZE]);
 
 unsigned int checkGameStatus(void);
 

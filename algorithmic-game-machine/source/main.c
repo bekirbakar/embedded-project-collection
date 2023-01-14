@@ -4,15 +4,17 @@
  * Created on: Aug 1, 2018
  * Author: Bekir Bakar
  */
-#include "main.h"
 #include "stm32f1xx_hal.h"
+
+#include "main.h"
 
 TIM_HandleTypeDef htim3;
 
 void SystemClock_Config(void);
+void HAL_TIM_MspPostInit(TIM_HandleTypeDef *htim);
+
 static void MX_GPIO_Init(void);
 static void MX_TIM3_Init(void);
-void HAL_TIM_MspPostInit(TIM_HandleTypeDef *htim);
 
 int main(void)
 {
@@ -25,7 +27,7 @@ int main(void)
 
     while (1)
     {
-        playCargobot();
+        playCargoBot();
     }
 }
 
@@ -111,7 +113,8 @@ static void MX_TIM3_Init(void)
 static void MX_GPIO_Init(void)
 {
     /**
-     * Configure pins as
+     * Configure pins as:
+     *
      * Analog
      * Input
      * Output
@@ -133,7 +136,8 @@ static void MX_GPIO_Init(void)
     HAL_GPIO_WritePin(GPIOC, Led_A1_Pin | Led_B3_Pin, GPIO_PIN_RESET);
 
     // Configure GPIO pin Output Level
-    HAL_GPIO_WritePin(GPIOB, Led_A3_Pin | Led_B2_Pin | Led_B1_Pin, GPIO_PIN_RESET);
+    HAL_GPIO_WritePin(GPIOB, Led_A3_Pin | Led_B2_Pin | Led_B1_Pin,
+                      GPIO_PIN_RESET);
 
     // Configure GPIO pin : Led_A2_Pin
     GPIO_InitStruct.Pin = Led_A2_Pin;

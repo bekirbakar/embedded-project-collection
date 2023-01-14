@@ -13,8 +13,8 @@
 #include "stm32f100xb.h"
 
 // Input-output
-#define ON          1
-#define OFF         0
+#define ON      1
+#define OFF     0
 #define PRESSED     1
 #define RELEASED    0
 
