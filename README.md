@@ -1,14 +1,10 @@
-# Electronics
+# Embedded Project Collection
 
-This repository contains electronics-related projects (freelance, hobby ...) from my archive.
+Here, you can find codes for STM ARM Cortex - M4 Family or some other development kits, circuit schematics, and PCB designs.
+All of the projects are very old, simple, and not full implementations - just initial developments or a POC.
+So that you may not able to reproduce, see them as an example.
 
-All of the projects are very old, simple, and not full implementations - just initial development or a POC.
-I reviewed them and tried to reproduce outputs (not always possible due to setup requirements) before publishing them.
-
-You can find here some codes (for STM ARM Cortex - M4 Family or development kits), Schematics, and PCB designs.
-
-Consider every top folder as a project and the below sub-title as its description.
-
+Consider every folder as a project and the below sub-title as its description.
 If you find anything useful, do not hesitate to get more information.
 
 ## Algorithmic Game Machine
