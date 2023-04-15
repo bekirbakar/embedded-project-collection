@@ -39,53 +39,6 @@ unsigned int product[CELL][PRICE] = {{1, 100},
                                      {5, 100},
                                      {6, 100}};
 
-void setup()
-{
-    pinMode(coinInterruptPin, INPUT_PULLUP);
-    attachInterrupt(digitalPinToInterrupt(coinInterruptPin), coinInput,
-                    CHANGE);
-
-    // Add an event listener for this keypad.
-    keypad.addEventListener(keypadEvent);
-    Serial.begin(9600);
-}
-
-void loop()
-{
-    Serial.println("Waiting!!!");
-    keypad.waitForKey();
-}
-
-void keypadEvent(KeypadEvent key)
-{
-    switch (keypad.getState())
-    {
-    case PRESSED:
-        if (key == '#')
-        {
-            eventNumber = 3;
-        }
-        else if (key == '*')
-        {
-            eventNumber = 2;
-        }
-        else
-        {
-            eventNumber = 1;
-        }
-        break;
-    case RELEASED:
-        eventHandler(eventNumber, key);
-        break;
-    case HOLD:
-        // Buzzer;
-        break;
-    case IDLE:
-        // TODO
-        break;
-    }
-}
-
 short int keyInput = -100;
 // short int keyInput[2] = {-10, -10}
 byte keyCounter = 0;
@@ -97,7 +50,6 @@ void led()
 
 int relayOnOff(short int no)
 {
-    // no = 1;
     // Set output high.
     // Wait for a while.
     // Set output low.
@@ -117,7 +69,6 @@ void startEvent()
     led();
 }
 
-void coinControl();
 void diyezEvent()
 {
     keyInput = 0;
@@ -142,9 +93,15 @@ void keypadEvent(KeypadEvent key)
         if (key == '#')
         {
             Serial.println(key);
-            // digitalWrite(ledPin,!digitalRead(ledPin));
-            // ledPin_state = digitalRead(ledPin);
-            // Remember LED state, lit or unlit.
+            eventNumber = 3;
+        }
+        else if (key == '*')
+        {
+            eventNumber = 2;
+        }
+        else
+        {
+            eventNumber = 1;
         }
         break;
 
@@ -152,9 +109,7 @@ void keypadEvent(KeypadEvent key)
         if (key == '*')
         {
             Serial.println(key);
-            // digitalWrite(ledPin,ledPin_state);
             // Restore LED state from before it started blinking.
-            blink = false;
         }
         break;
 
@@ -162,7 +117,6 @@ void keypadEvent(KeypadEvent key)
         if (key == '*')
         {
             Serial.println("hold");
-            // blink = true;
             // Blink the LED when holding the * key.
         }
         break;
@@ -170,7 +124,6 @@ void keypadEvent(KeypadEvent key)
         if (key == '*')
         {
             Serial.println("idle");
-            // blink = true;
             // Blink the LED when holding the * key.
         }
         break;
@@ -247,12 +200,28 @@ void coinControl()
 
 void coinInput()
 {
-    // coin = coin + 100;
-    int val = digitalRead(coinPin);
+    int val = digitalRead(coinInterruptPin);
     if (val == 0)
     {
         delay(100);
         Serial.println("Coin inserted!");
-        qu = qu + 100;
+        coin = coin + 100;
     }
+}
+
+void setup()
+{
+    pinMode(coinInterruptPin, INPUT_PULLUP);
+    attachInterrupt(digitalPinToInterrupt(coinInterruptPin), coinInput,
+                    CHANGE);
+
+    // Add an event listener for this keypad.
+    keypad.addEventListener(keypadEvent);
+    Serial.begin(9600);
+}
+
+void loop()
+{
+    Serial.println("Waiting!!!");
+    keypad.waitForKey();
 }

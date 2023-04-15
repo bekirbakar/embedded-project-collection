@@ -31,8 +31,7 @@ void loop()
             digitalWrite(relayPin, LOW);
             delay(2000);
             qu = 0;
+            digitalWrite(relayPin, HIGH);
         }
     }
-
-    digitalWrite(relayPin, HIGH);
 }

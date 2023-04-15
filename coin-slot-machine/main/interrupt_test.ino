@@ -11,7 +11,8 @@ void setup()
 {
     pinMode(ledPin, OUTPUT);
     pinMode(interruptPin, INPUT_PULLUP);
-    attachInterrupt(digitalPinToInterrupt(1), blink, CHANGE);
+    attachInterrupt(digitalPinToInterrupt(interruptPin), blink, CHANGE);
+    Serial.begin(9600);
 }
 
 void loop()
@@ -20,7 +21,7 @@ void loop()
 
     if (state == 1)
     {
-        Serial.println("okay");
+        Serial.println("Okay, I'm blinking now!");
     }
 }
 

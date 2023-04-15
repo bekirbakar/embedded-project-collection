@@ -1,14 +1,12 @@
-**/.DS_Store
-
+# Global
+/.DS_Store
 .vscode/**
 
-# Algortimic Game Machine
+# Algoritmic Game Machine
 ## Ignore STM Core Library Files
 **/**/*stm32f*
 
 # Charger Unit
-# charger-unit/documents/contactors/*
-# charger-unit/documents/transducers/*
 charger-unit/documents/*
 charger-unit/schematic.dch
 charger-unit/voltage-sensor.pdf
